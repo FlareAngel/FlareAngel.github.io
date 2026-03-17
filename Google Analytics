@@ -163,12 +163,24 @@
 
   <!-- ══════════════ HERO ══════════════ -->
   <section class="hero-section py-0 overflow-hidden text-center position-relative" id="home">
-    <div class="hero-bg-container">
+    <!-- <div class="hero-bg-container">
       <div class="hero-gradient-overlay"></div>
       <div class="hero-particles"></div>
       <div class="bg-container overlay overlay-dark-30" style="background-position:center 40%;"></div>
-    </div>
+    </div> -->
 
+	<div class="hero-bg-container">
+		<div class="hero-gradient-overlay"></div>
+		<div class="hero-particles"></div>
+		<div class="bg-container overlay overlay-dark-30 parallax" data-rellax-percentage="0.5" style="background-image: url(&quot;Flare/img/backgrounds/waves.jpg&quot;); background-position: center 40%; transform: translate3d(0px, -6px, 0px);"></div>
+	</div>
+
+
+
+
+
+
+	  
     <div class="container position-relative">
       <div class="row h-100vh justify-content-center align-items-center">
         <div class="col-lg-10 col-xl-8">
