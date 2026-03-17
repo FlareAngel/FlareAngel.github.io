@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords" content="Xinsheng Yang, Data Science, Big Data, AI, Fuyang Normal University, Math Modeling">
@@ -118,26 +118,34 @@
     .award-text  { font-size: 0.85rem; color: #555; line-height: 1.5; flex: 1; }
 
     /* ── Skills grid ── */
-    .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: 16px; }
+    /* .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: 16px; } */
+	.skills-grid {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+	  gap: 16px;
+	}
+
+	  
     /* .skill-card  { background: #fff; border-radius: 16px; padding: 24px 16px; text-align: center; border: 1px solid #eee; transition: all 0.2s; }
     .skill-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.1); border-color: rgba(242,56,56,0.2); transform: translateY(-4px); } */
-		.skill-card{
-		  display:block;
-		  text-decoration:none;
-		  color:inherit;
-		  cursor:pointer;
-		  position:relative;
-		  z-index:10;
-		  border:1px solid #ddd;
-		  padding:20px;
-		}
-	  .skill-card {
-		  display: block;
-		  text-decoration: none;
-		  color: inherit;
-		  cursor: pointer;
-		  transition: transform 0.2s ease, box-shadow 0.2s ease;
-		}
+	.skill-card {
+	  display: block;
+	  position: relative;
+	  z-index: 20;
+	  padding: 20px;
+	  border: 1px solid #ddd;
+	  border-radius: 16px;
+	  background: #fff;
+	  text-decoration: none;
+	  color: inherit;
+	  cursor: pointer;
+	  transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.skill-card:hover {
+	  transform: translateY(-4px);
+	  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
 		
 	.skill-card:hover {
 		  transform: translateY(-4px);
@@ -161,7 +169,8 @@
           data-transparent="" data-text-color="#ffffff" role="banner"
           style="background-color: rgba(31,39,73,0.97)!important">
     <div class="container">
-<a class="navbar-brand mr-lg-5" href="#home" ...>
+<!-- <a class="navbar-brand mr-lg-5" href="#home" ...> -->
+	<a class="navbar-brand mr-lg-5" href="#home">
   <img src="Flare/icon.svg" alt="Fuyang Normal University" 
        style="height:36px;margin-right:10px;vertical-align:middle;">
   Xinsheng <span style="color:#f23838;">Yang</span>
@@ -971,32 +980,32 @@
 
 
            <!-- Social Media & Newsletter -->
-                        <div class="col-lg-4">
-                            <div class="footer-section">
-                                <h6 class="footer-section-title">Stay Connected</h6>
-                                <p class="footer-description">
-                                    Stay informed on my latest research, publications, and insights shaping the future of AI.
-                                </p>
-                                
-                                <!-- Social Media Icons -->
-                                <div class="footer-social">
-                                    <a href="https://x.com" target="_blank" class="social-icon twitter" title="Twitter / X">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="https://github.com/FlareAngel" target="_blank" class="social-icon github" title="GitHub">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in" target="_blank" class="social-icon linkedin" title="LinkedIn">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                    <a href="https://scholar.google.com" target="_blank" class="social-icon scholar" title="Google Scholar">
-                                        <i class="fas fa-graduation-cap"></i>
-                                    </a>
-                                    <a href="https://www.xiaohongshu.com/user/profile" target="_blank" class="social-icon xiaohongshu" title="RedNote / XiaoHongShu">
-                                        <i class="fas fa-camera"></i>
-                                    </a>
-                                </div>
-
+		<div class="col-lg-4">
+		  <div class="footer-section">
+		    <h6 class="footer-section-title">Stay Connected</h6>
+		    <p class="footer-description">
+		      Stay informed on my latest research, publications, and insights shaping the future of AI.
+		    </p>
+		
+		    <div class="footer-social">
+		      <a href="https://x.com" target="_blank" class="social-icon twitter" title="Twitter / X">
+		        <i class="fab fa-twitter"></i>
+		      </a>
+		      <a href="https://github.com/FlareAngel" target="_blank" class="social-icon github" title="GitHub">
+		        <i class="fab fa-github"></i>
+		      </a>
+		      <a href="https://www.linkedin.com/in" target="_blank" class="social-icon linkedin" title="LinkedIn">
+		        <i class="fab fa-linkedin"></i>
+		      </a>
+		      <a href="https://scholar.google.com" target="_blank" class="social-icon scholar" title="Google Scholar">
+		        <i class="fas fa-graduation-cap"></i>
+		      </a>
+		      <a href="https://www.xiaohongshu.com/user/profile" target="_blank" class="social-icon xiaohongshu" title="RedNote / XiaoHongShu">
+		        <i class="fas fa-camera"></i>
+		      </a>
+		    </div>
+		  </div>
+		</div>
 
     <div class="footer-bottom">
       <div class="container">
@@ -1082,4 +1091,4 @@
         <script src="files/aos.js"></script>
 
         <!-- Theme Javascripts -->
-        <script src="files/theme
+        <script src="files/theme.js"></script>
