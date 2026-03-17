@@ -119,8 +119,20 @@
 
     /* ── Skills grid ── */
     .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: 16px; }
-    .skill-card  { background: #fff; border-radius: 16px; padding: 24px 16px; text-align: center; border: 1px solid #eee; transition: all 0.2s; }
-    .skill-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.1); border-color: rgba(242,56,56,0.2); transform: translateY(-4px); }
+    /* .skill-card  { background: #fff; border-radius: 16px; padding: 24px 16px; text-align: center; border: 1px solid #eee; transition: all 0.2s; }
+    .skill-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.1); border-color: rgba(242,56,56,0.2); transform: translateY(-4px); } */
+	.skill-card {
+		  display: block;
+		  text-decoration: none;
+		  color: inherit;
+		  cursor: pointer;
+		  transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+		
+	.skill-card:hover {
+		  transform: translateY(-4px);
+		  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
     .sk-icon  { font-size: 2rem; margin-bottom: 10px; }
     .sk-name  { font-size: 0.88rem; font-weight: 700; color: #1f2749; }
     .sk-level { font-size: 0.72rem; color: #999; margin-top: 4px; }
