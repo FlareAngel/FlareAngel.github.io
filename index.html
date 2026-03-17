@@ -119,25 +119,34 @@
 
 	
 	/* ── Skills grid ── */
+	.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+	gap: 16px;
+	}
+	
+	.skill-card {
+	display: block;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 16px;
+	background: #fff;
+	text-decoration: none;
+	color: inherit;
+	position: relative;
+	z-index: 20;
+	}
 	.skill-card {
 	  display: block;
 	  position: relative;
 	  z-index: 20;
-	  padding: 20px;
-	  border: 1px solid #ddd;
-	  border-radius: 16px;
-	  background: #fff;
-	  text-decoration: none;
-	  color: inherit;
-	  cursor: pointer;
-	  transition: transform 0.2s ease, box-shadow 0.2s ease;
+	  pointer-events: auto !important;
 	}
 	
-	.skill-card:hover {
-	  transform: translateY(-4px);
-	  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	.skill-card::before,
+	.skill-card::after {
+	  pointer-events: none !important;
 	}
-
 
 	  
 	/* .skill-card:hover {
@@ -939,12 +948,7 @@
               <p class="footer-title">B.Eng. in Data Science &amp; Big Data Technology</p>
               <p class="footer-affiliation">Fuyang Normal University · Class of 2025</p>
               <div class="footer-contact">
-			<div class="contact-item">
-			  <i class="fas fa-envelope"></i>
-			  <span>
-			    <a href="mailto:xinshengyang23@gmail.com?subject=Hello%20Xinsheng">xinshengyang23@gmail.com</a>
-			  </span>
-			</div>
+ 				<div class="contact-item"><i class="fas fa-envelope"></i><span> <a href="mailto:xinshengyang23@gmail.com">xinshengyang23@gmail.com</a></span></div>
                 <div class="contact-item"><i class="fas fa-phone"></i><span>+86 191-5542-5985</span></div>
               </div>
             </div>
