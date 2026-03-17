@@ -119,103 +119,39 @@
 
 	
 	/* ── Skills grid ── */
-	.skills-grid {
-	  display: grid;
-	  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-	  gap: 16px;
-	}
-	
-	/* ── Skills card ── */
-	.skill-card,
-	.skill-card:hover,
-	.skill-card:focus,
-	.skill-card:active,
-	.skill-card:visited {
+		.skill-card,
+		.skill-card:hover,
+		.skill-card:focus,
+		.skill-card:active,
+		.skill-card:visited {
+		  display: block;
+		  text-decoration: none !important;
+		  color: inherit !important;
+		  cursor: pointer;
+		}
+		
+		.skill-card * {
+		  text-decoration: none !important;
+		}
+	  
+		.skill-card {
 	  display: block;
-	  text-decoration: none !important;
-	  color: inherit !important;
-	  cursor: pointer;
-	}
-	
-	.skill-card * {
-	  text-decoration: none !important;
-	}
-	
-	.skill-card {
 	  position: relative;
 	  z-index: 20;
-	  background: #fff;
-	  border: 1px solid #eee;
+	  padding: 20px;
+	  border: 1px solid #ddd;
 	  border-radius: 16px;
-	  padding: 24px 16px;
-	  text-align: center;
-	  min-height: 170px;
-	  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-	  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+	  background: #fff;
+	  text-decoration: none;
+	  color: inherit;
+	  cursor: pointer;
+	  transition: transform 0.2s ease, box-shadow 0.2s ease;
 	}
 	
 	.skill-card:hover {
 	  transform: translateY(-4px);
-	  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-	  border-color: rgba(242,56,56,0.2);
+	  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 	}
-	
-	.sk-icon {
-	  font-size: 2rem;
-	  margin-bottom: 10px;
-	}
-	
-	.sk-name {
-	  font-size: 0.88rem;
-	  font-weight: 700;
-	  color: #1f2749;
-	}
-	
-	.sk-level {
-	  font-size: 0.72rem;
-	  color: #999;
-	  margin-top: 4px;
-	}
-	
-	/* ── Popup ── */
-	.skill-popup {
-	  max-width: 560px;
-	  padding: 28px 24px;
-	  border-radius: 18px;
-	  background: #fff;
-	}
-	
-	.skill-popup h2 {
-	  margin-bottom: 12px;
-	  color: #1f2749;
-	  font-weight: 800;
-	}
-	
-	.skill-popup p {
-	  color: #555;
-	  line-height: 1.8;
-	  margin-bottom: 10px;
-	}
-	
-	.popup-link-btn {
-	  display: inline-block;
-	  margin-top: 8px;
-	  padding: 10px 18px;
-	  border-radius: 12px;
-	  background: #f23838;
-	  color: #fff !important;
-	  text-decoration: none !important;
-	  font-weight: 600;
-	  transition: opacity 0.2s ease, transform 0.2s ease;
-	}
-	
-	.popup-link-btn:hover {
-	  color: #fff !important;
-	  text-decoration: none !important;
-	  opacity: 0.92;
-	  transform: translateY(-1px);
-	}
-
 
 
 	  
@@ -925,79 +861,79 @@
         <div class="skill-card"><div class="sk-icon">📊</div><div class="sk-name">pyecharts</div><div class="sk-level">Proficient</div><div style="margin-top:8px;color:#f23838;font-size:0.7rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div></div>
         <div class="skill-card"><div class="sk-icon">🧮</div><div class="sk-name">Math Modeling</div><div class="sk-level">Competition-level</div><div style="margin-top:8px;color:#f23838;font-size:0.7rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
       </div> -->
-	<div class="skills-grid" data-aos="fade-up" data-aos-duration="800">
-	  <a class="skill-card" data-fancybox data-src="#popup-python" href="#popup-python">
-	    <div class="sk-icon">🐍</div>
-	    <div class="sk-name">Python</div>
-	    <div class="sk-level">Proficient</div>
-	    <div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
-	      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-	    </div>
-	  </a>
-	
-	  <a class="skill-card" data-fancybox data-src="#popup-java" href="#popup-python">
-	    <div class="sk-icon">☕</div>
-	    <div class="sk-name">Java</div>
-	    <div class="sk-level">Proficient</div>
-	    <div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
-	      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-	    </div>
-	  </a>
-	
-	  <a class="skill-card" data-fancybox data-src="#popup-c" href="#popup-python">
-	    <div class="sk-icon">⚙️</div>
-	    <div class="sk-name">C</div>
-	    <div class="sk-level">Competent</div>
-	    <div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
-	      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-	    </div>
-	  </a>
-	
-	  <a class="skill-card" data-fancybox data-src="#popup-pandas" href="#popup-python">
-	    <div class="sk-icon">🐼</div>
-	    <div class="sk-name">Pandas</div>
-	    <div class="sk-level">Proficient</div>
-	    <div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
-	      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-	    </div>
-	  </a>
-	
-	  <a class="skill-card" data-fancybox data-src="#popup-hive" href="#popup-python">
-	    <div class="sk-icon">🗄️</div>
-	    <div class="sk-name">Hive / SQL</div>
-	    <div class="sk-level">Proficient</div>
-	    <div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
-	      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-	    </div>
-	  </a>
-	
-	  <a class="skill-card" data-fancybox data-src="#popup-scrapy" href="#popup-python">
-	    <div class="sk-icon">🕷️</div>
-	    <div class="sk-name">Scrapy</div>
-	    <div class="sk-level">Competent</div>
-	    <div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
-	      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-	    </div>
-	  </a>
-	
-	  <a class="skill-card" data-fancybox data-src="#popup-pyecharts" href="#popup-python">
-	    <div class="sk-icon">📊</div>
-	    <div class="sk-name">pyecharts</div>
-	    <div class="sk-level">Proficient</div>
-	    <div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
-	      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-	    </div>
-	  </a>
-	
-	  <a class="skill-card" data-fancybox data-src="#popup-math" href="#popup-python">
-	    <div class="sk-icon">🧮</div>
-	    <div class="sk-name">Math Modeling</div>
-	    <div class="sk-level">Competition-level</div>
-	    <div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
-	      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-	    </div>
-	  </a>
-	</div>
+我需要你直接把这 8 个 skill-card 全部改成“无下划线 + Fancybox 弹窗详情 + 弹窗内带外链按钮”的完整版本。	<div class="skills-grid" data-aos="fade-up" data-aos-duration="800">
+		  <a class="skill-card test-link" href="https://x7xrycxzti.feishu.cn/drive/folder/fldcnBESdnevr6BSn3Y68nc4Stf" target="_blank" rel="noopener noreferrer">
+			<div class="sk-icon">🐍</div>
+			<div class="sk-name">Python</div>
+			<div class="sk-level">Proficient</div>
+			<div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
+			  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+			</div>
+		  </a>
+
+		  <a class="skill-card" href="https://x7xrycxzti.feishu.cn/drive/folder/fldcniqKp5sRILiyaruPzNe3rWd" target="_blank" rel="noopener noreferrer">
+			<div class="sk-icon">☕</div>
+			<div class="sk-name">Java</div>
+			<div class="sk-level">Proficient</div>
+			<div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
+			  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+			</div>
+		  </a>
+		
+		  <a class="skill-card" href="https://x7xrycxzti.feishu.cn/drive/folder/fldcn6iAWphsoRc3fITSc8vD73g" target="_blank" rel="noopener noreferrer">
+			<div class="sk-icon">⚙️</div>
+			<div class="sk-name">C</div>
+			<div class="sk-level">Competent</div>
+			<div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
+			  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+			</div>
+		  </a>
+		
+		  <a class="skill-card" href="https://blog.marquis.eu.org/posts/b7f64c96/" target="_blank" rel="noopener noreferrer">
+			<div class="sk-icon">🐼</div>
+			<div class="sk-name">Pandas</div>
+			<div class="sk-level">Proficient</div>
+			<div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
+			  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+			</div>
+		  </a>
+		
+		  <a class="skill-card" href="https://x7xrycxzti.feishu.cn/drive/folder/fldcnIogJpHFrmSCSVaTkeLw0Og" target="_blank" rel="noopener noreferrer">
+			<div class="sk-icon">🗄️</div>
+			<div class="sk-name">Hive / SQL</div>
+			<div class="sk-level">Proficient</div>
+			<div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
+			  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+			</div>
+		  </a>
+		
+		  <a class="skill-card" href="https://www.bilibili.com/video/BV1ZT4y1d7JM/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=a883314834b18cf79f5369517d0c6169" target="_blank" rel="noopener noreferrer">
+			<div class="sk-icon">🕷️</div>
+			<div class="sk-name">Scrapy</div>
+			<div class="sk-level">Competent</div>
+			<div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
+			  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+			</div>
+		  </a>
+		
+		  <a class="skill-card" href="https://pyecharts.org/#/" target="_blank" rel="noopener noreferrer">
+			<div class="sk-icon">📊</div>
+			<div class="sk-name">pyecharts</div>
+			<div class="sk-level">Proficient</div>
+			<div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
+			  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+			</div>
+		  </a>
+		
+		  <a class="skill-card" href="https://speech.ee.ntu.edu.tw/~hylee/index.php" target="_blank" rel="noopener noreferrer">
+			<div class="sk-icon">🧮</div>
+			<div class="sk-name">Math Modeling</div>
+			<div class="sk-level">Competition-level</div>
+			<div style="margin-top:8px;color:#f23838;font-size:0.7rem;">
+			  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+			</div>
+		  </a>
+		</div>
 		
     </div>
   </section>
@@ -1018,7 +954,12 @@
               <p class="footer-title">B.Eng. in Data Science &amp; Big Data Technology</p>
               <p class="footer-affiliation">Fuyang Normal University · Class of 2025</p>
               <div class="footer-contact">
-                <div class="contact-item"><i class="fas fa-envelope"></i><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="714048404444454344484944314047425f121e1c">[email&#160;protected]</a></span></div>
+			<div class="contact-item">
+				  <i class="fas fa-envelope"></i>
+				  <span>
+				    <a href="mailto:xinshengyang23@gmail.com">xinshengyang23@gmail.com</a>
+				  </span>
+			</div>
                 <div class="contact-item"><i class="fas fa-phone"></i><span>+86 191-5542-5985</span></div>
               </div>
             </div>
@@ -1147,214 +1088,19 @@
 
 <!-- End of Modern Footer -->
 
-<!-- End of Modern Footer -->
-
-<!-- ===== Hidden Fancybox Popups ===== -->
-<div style="display:none;" id="popup-python" class="skill-popup">
-  <h2>Python</h2>
-  <p><strong>Level:</strong> Proficient</p>
-  <p>Experienced in data analysis, automation scripting, web scraping, and AI-related applications.</p>
-  <p>
-    <a class="popup-link-btn"
-       href="https://x7xrycxzti.feishu.cn/drive/folder/fldcnBESdnevr6BSn3Y68nc4Stf"
-       target="_blank"
-       rel="noopener noreferrer">
-      View Portfolio
-    </a>
-  </p>
-</div>
-
-<div style="display:none;" id="popup-java" class="skill-popup">
-  <h2>Java</h2>
-  <p><strong>Level:</strong> Proficient</p>
-  <p>Skilled in Java programming, object-oriented design, and problem-solving for academic and project tasks.</p>
-  <p>
-    <a class="popup-link-btn"
-       href="https://x7xrycxzti.feishu.cn/drive/folder/fldcniqKp5sRILiyaruPzNe3rWd"
-       target="_blank"
-       rel="noopener noreferrer">
-      View Portfolio
-    </a>
-  </p>
-</div>
-
-<div style="display:none;" id="popup-c" class="skill-popup">
-  <h2>C</h2>
-  <p><strong>Level:</strong> Competent</p>
-  <p>Comfortable with core C language programming, memory handling, and foundational algorithm implementation.</p>
-  <p>
-    <a class="popup-link-btn"
-       href="https://x7xrycxzti.feishu.cn/drive/folder/fldcn6iAWphsoRc3fITSc8vD73g"
-       target="_blank"
-       rel="noopener noreferrer">
-      View Portfolio
-    </a>
-  </p>
-</div>
-
-<div style="display:none;" id="popup-pandas" class="skill-popup">
-  <h2>Pandas</h2>
-  <p><strong>Level:</strong> Proficient</p>
-  <p>Used for data cleaning, analysis, statistical processing, and feature extraction in multiple projects.</p>
-  <p>
-    <a class="popup-link-btn"
-       href="https://blog.marquis.eu.org/posts/b7f64c96/"
-       target="_blank"
-       rel="noopener noreferrer">
-      View Portfolio
-    </a>
-  </p>
-</div>
-
-<div style="display:none;" id="popup-hive" class="skill-popup">
-  <h2>Hive / SQL</h2>
-  <p><strong>Level:</strong> Proficient</p>
-  <p>Experienced in SQL querying, Hive-based warehouse design, and layered analytics workflows.</p>
-  <p>
-    <a class="popup-link-btn"
-       href="https://x7xrycxzti.feishu.cn/drive/folder/fldcnIogJpHFrmSCSVaTkeLw0Og"
-       target="_blank"
-       rel="noopener noreferrer">
-      View Portfolio
-    </a>
-  </p>
-</div>
-
-<div style="display:none;" id="popup-scrapy" class="skill-popup">
-  <h2>Scrapy</h2>
-  <p><strong>Level:</strong> Competent</p>
-  <p>Capable of building medium-scale web crawlers for structured data collection and pipeline integration.</p>
-  <p>
-    <a class="popup-link-btn"
-       href="https://www.bilibili.com/video/BV1ZT4y1d7JM/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=a883314834b18cf79f5369517d0c6169"
-       target="_blank"
-       rel="noopener noreferrer">
-      View Portfolio
-    </a>
-  </p>
-</div>
-
-<div style="display:none;" id="popup-pyecharts" class="skill-popup">
-  <h2>pyecharts</h2>
-  <p><strong>Level:</strong> Proficient</p>
-  <p>Used to build interactive visual dashboards and present analytical insights clearly and effectively.</p>
-  <p>
-    <a class="popup-link-btn"
-       href="https://pyecharts.org/#/"
-       target="_blank"
-       rel="noopener noreferrer">
-      View Portfolio
-    </a>
-  </p>
-</div>
-
-<div style="display:none;" id="popup-math" class="skill-popup">
-  <h2>Math Modeling</h2>
-  <p><strong>Level:</strong> Competition-level</p>
-  <p>Strong experience in mathematical modeling competitions, including model construction, solving, and paper writing.</p>
-  <p>
-    <a class="popup-link-btn"
-       href="https://speech.ee.ntu.edu.tw/~hylee/index.php"
-       target="_blank"
-       rel="noopener noreferrer">
-      View Portfolio
-    </a>
-  </p>
-</div>
-#skills .skills-grid {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
-  gap: 16px !important;
-}
-
-#skills .skill-card,
-#skills .skill-card:hover,
-#skills .skill-card:focus,
-#skills .skill-card:active,
-#skills .skill-card:visited {
-  display: block !important;
-  text-decoration: none !important;
-  color: inherit !important;
-  cursor: pointer !important;
-}
-
-#skills .skill-card {
-  position: relative !important;
-  z-index: 20 !important;
-  background: #fff !important;
-  border: 1px solid #eee !important;
-  border-radius: 16px !important;
-  padding: 24px 16px !important;
-  text-align: center !important;
-  min-height: 170px !important;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.04) !important;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease !important;
-}
-
-#skills .skill-card:hover {
-  transform: translateY(-4px) !important;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1) !important;
-  border-color: rgba(242,56,56,0.2) !important;
-}
-
-#skills .sk-icon {
-  font-size: 2rem !important;
-  margin-bottom: 10px !important;
-}
-
-#skills .sk-name {
-  font-size: 0.88rem !important;
-  font-weight: 700 !important;
-  color: #1f2749 !important;
-}
-
-#skills .sk-level {
-  font-size: 0.72rem !important;
-  color: #999 !important;
-  margin-top: 4px !important;
-}
-
-
-
-
-
-
-			
-
-<!-- Core Javascripts -->
-<script src="files/jquery.min.js"></script>
-<script src="files/popper.min.js"></script>
-<script src="files/bootstrap.min.js"></script>
-
-<!-- Vendor Javascripts -->
-<script src="files/rellax.min.js"></script>
-<script src="files/jquery.fancybox.min.js"></script>
-<script src="files/sticky-kit.min.js"></script>
-<script src="files/imagesloaded.pkgd.min.js"></script>
-<script src="files/isotope.pkgd.min.js"></script>
-<script src="files/packery-mode.pkgd.min.js"></script>
-<script src="files/aos.js"></script>
-
-<!-- Theme Javascripts -->
-<script src="files/theme.js"></script>
-
-
-
-			
-
         <!-- <!-- Core Javascripts -->
-        <!-- <script src="files/jquery.min.js"></script>
-        <script src="files/popper.min.js"></script>
-        <script src="files/bootstrap.min.js"></script> -->
+		<script src="files/jquery.min.js"></script>
+		<script src="files/popper.min.js"></script>
+		<script src="files/bootstrap.min.js"></script>
 
         <!-- Vendor Javascripts -->
-        <!-- <script src="files/rellax.min.js"></script>
+        <script src="files/rellax.min.js"></script>
         <script src="files/jquery.fancybox.min.js"></script>
         <script src="files/sticky-kit.min.js"></script>
         <script src="files/imagesloaded.pkgd.min.js"></script>
         <script src="files/isotope.pkgd.min.js"></script>
         <script src="files/packery-mode.pkgd.min.js"></script>
-        <script src="files/aos.js"></script> -->
+        <script src="files/aos.js"></script>
 
         <!-- Theme Javascripts -->
-        <!-- <script src="files/theme.js"></script> --> -->
+        <script src="files/theme.js"></script> -->
